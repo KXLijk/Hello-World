@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>各科小常识</title>
+    <style type="text/css">
+        table, tr, td{border: 1px solid black;}
+    </style>
+</head>
+
+<body>
+<h1><b>各科小常识</b></h1>
+<h2><b>语文</b></h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三国演义是中国四大名著之一，元末明初小说家罗贯中所著。</p>
+<hr>
+<h2><b>数学</b></h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;勾股定理直角三角形：a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup>。</p>
+<hr>
+<h2><b>英语</b></h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No pain, No gain.</p>
+<hr>
+<h2>化学</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H<sub>2</sub>SO<sub>4</sub>是一种重要的化工原料。</p>
+<hr>
+<h2>经济</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版权符号：&copy;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注册符号：&reg;</p>
+<hr>
+<ol type="i">
+    <li>HTML</li>
+    <li>JavaScript</li>
+</ol>
+<table>
+    <caption>学生成绩表</caption>
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>成绩</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>男</td>
+            <td>520</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>平均分</td>
+            <td colspan="2">385</td>
+        </tr>
+    </tfoot>
+</table>
+<form action="main.js" target="_blank" method="post">
+    <label>
+        <input type="text" size="15" maxlength="20"><br>
+        性别：
+        <input type="radio" name="gender" value="male" checked>男
+        <input type="radio" name="gender" value="female">女<br>
+        <input type="reset" value="重置">
+        <input type="submit" value="提交">
+        <textarea rows="5" cols="20">备注</textarea>
+        <select size="5" multiple>
+            <option>HTML</option>
+            <option>CSS</option>
+        </select>
+    </label>
+</form>
+<form action="main.js" target="_blank" method="post">
+    <label for="id">昵称：</label>
+    <input type="text" id="id" name="id" placeholder="账号"><br>
+    <label for="pw">密码：</label>
+    <input type="password" id="pw" name="password"><br>
+    <label for="em">邮箱：</label>
+    <input type="text" id="em" name="email">
+    <label for="em_list"></label>
+    <select name="email_list" id="em_list" size="1">@
+        <option value="qq" selected>qq.com</option>
+        <option value="163">163.com</option>
+        <option value="gmail">gmail.com</option>
+        <option value="bp">bp.com</option>
+        <option value="cs">cs.com</option>
+    </select><br>
+    性别：
+    <label for="male"><input type="radio" name="gender" id="male" value="male" checked>男</label>
+    <label for="female"><input type="radio" name="gender" id="female" value="female">女</label><br>
+    爱好：
+    <label for="travel"><input type="checkbox" name="hobby" id="travel" value="travel">旅游</label>
+    <label for="photo"><input type="checkbox" name="hobby" id="photo" value="travel">摄影</label>
+    <label for="sport"><input type="checkbox" name="hobby" id="sport" value="travel">运动</label><br>
+    <label for="introduction">个人简介：</label><br>
+    <textarea name="introduction" id="introduction" cols="30" rows="10"></textarea><br>
+    <label for="file">上传个人照片：</label><br>
+    <input type="file" id="file">
+    <hr>
+    <input type="submit" name="submit" value="立即注册">
+</form>
+</body>
+</html>
